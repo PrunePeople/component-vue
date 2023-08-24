@@ -6,22 +6,26 @@
     <div>
       <!-- Utilisation du composant 'Component-one' importé -->
       <Component-one/>
+      <Component-two/> <!-- Utilisation directe du composant dans le template -->
     </div>
   </div>
 </template>
 
 <script>
 // Dans cette section <script>, vous pouvez ajouter des scripts logiques liés au composant
+import ComponentTwo from './components/Component-two.vue' // Import du composant en local
+
 export default {
-  // Aucune donnée ou méthode spécifiée dans cet exemple
+  //  Pour enregistrer des composants qui seront utilisés dans le template du composant parent
+  components: {
+    ComponentTwo
+  }
 }
 </script>
 
 <style>
-/* Styles spécifiques à ce composant */
 h1 {
-  /* Propriétés de style pour le titre h1 */
-  line-height: 1.5; /* Hauteur de ligne */
-  max-height: 100vh; /* Hauteur maximale égale à 100% de la hauteur de la vue */
+  line-height: 1.5; 
+  max-height: 100vh; 
 }
 </style>

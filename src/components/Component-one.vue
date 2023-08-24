@@ -3,7 +3,7 @@
     <div>
       <!-- Un titre affiché dans le composant -->
       <h1>
-        Je suis component One
+        Je suis component One en global
       </h1>
     </div>
   </template>
@@ -15,4 +15,3 @@
     name: 'Component one'
   }
   </script>
-  

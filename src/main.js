@@ -16,7 +16,7 @@ import router from './router'
 // Création d'une instance d'application Vue
 const app = createApp(App)
 
-// Définition du composant local 'Component-one' pour être utilisé dans le template
+// Définition du composant global 'Component-one' pour être utilisé dans le template
 app.component('Component-one', ComponentOne) // Utilisation: <Component-one>
 
 // Utilisation du router dans l'application Vue

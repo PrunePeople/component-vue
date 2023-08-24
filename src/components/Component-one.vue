@@ -15,3 +15,11 @@
     name: 'Component one'
   }
   </script>
+
+<style scoped>
+h1 {
+  background-color: lightblue;
+  padding: 20px;
+  border: 5px solid rgb(51, 51, 171);
+}
+</style>

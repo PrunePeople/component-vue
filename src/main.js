@@ -2,7 +2,8 @@
 import './assets/main.css'
 
 // Importation du composant ComponentOne depuis le fichier Component-one.vue
-import ComponentOne from './components/Component-one.vue'
+import ComponentOne from './components/Component-one.vue';
+import Navbar from './components/Navbar.vue'
 
 // Importation de la fonction createApp depuis Vue.js
 import { createApp } from 'vue'
@@ -18,6 +19,7 @@ const app = createApp(App)
 
 // Définition du composant global 'Component-one' pour être utilisé dans le template
 app.component('Component-one', ComponentOne) // Utilisation: <Component-one>
+app.component('Navbar', Navbar) // Utilisation: <Component-one>
 
 // Utilisation du router dans l'application Vue
 app.use(router)

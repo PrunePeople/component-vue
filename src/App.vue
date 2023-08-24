@@ -1,12 +1,17 @@
 <template>
   <!-- Le contenu de ce composant est défini dans le template -->
+
+  
   <div>
+
+    <Navbar/>
+
     <!-- Un titre affiché dans le composant -->
     <h1>Hello from APP component</h1>
     <div>
       <!-- Utilisation du composant 'Component-one' importé -->
       <Component-one/>
-      <Component-two/> <!-- Utilisation directe du composant dans le template -->
+      <Component-two/>
     </div>
   </div>
 </template>
@@ -18,14 +23,17 @@ import ComponentTwo from './components/Component-two.vue' // Import du composant
 export default {
   //  Pour enregistrer des composants qui seront utilisés dans le template du composant parent
   components: {
-    ComponentTwo
+    ComponentTwo,
   }
 }
 </script>
 
-<style>
+<style scoped>
+
 h1 {
-  line-height: 1.5; 
-  max-height: 100vh; 
+  background-color: lightgray;
+  padding: 40px;
+  border: 5px solid rgb(94, 94, 101);
 }
+
 </style>

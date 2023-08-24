@@ -5,3 +5,12 @@
     </h1>
   </div>
 </template>
+
+
+<style scoped>
+h1 {
+    background-color: lightgreen;
+  padding: 20px;
+  border: 5px solid darkgreen;
+}
+</style>
